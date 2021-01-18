@@ -1,5 +1,7 @@
 ﻿var submit = document.getElementById("submit-button")
 
+//listens for a submission in the form 
+//alerts the user what their percentage grade would be in the class
 submit.addEventListener("click", function () {
     alert('Your grade would be '
         + ((
