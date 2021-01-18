@@ -2,39 +2,59 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Prof. Ganderson Fan Site</title>
-    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <title>Micah's First Website in C#</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
 </head>
 <body>
-    <h1>Prof. Ganderson Fan Site</h1>
-    <img src="img/ProfAnderson.jpg" />
-    <p>Prof. Anderson (aka "Ganderson") is a Professor in the Information Systems Department at BYU.</p>
-    <br />
-    <p>Pop Quiz: We love him because...</p>
-    <ul id="quiz-props">
-        <li>A: The luscious locks he had growing up.</li>
-        <li>B: He can pound a pound of bacon like it ain't no thing.</li>
-        <li>C: That million dollar smile.</li>
-        <li>D: He looks out and cares for everyone around him.</li>
-        <li>E: All of the above.</li>
-    </ul>
-    <h2>Fan Mail</h2>
-    <form>
-        <label>From:</label>
-        <input type="" value="" id="from" />
+    <div class="main-body">
+        <h1>Micah</h1>
+        <div class="picture">
+            <img src="img/MVIMG_20200702_170225.jpg" />
+        </div>
+        <p>I hope to learn more about full stack development and maybe pick up some tricks to write my own desktop app in C#.</p>
         <br />
-        <label>Email:</label>
-        <input type="" value="" id="email" />
-        <br />
-        <label>Subject:</label>
-        <input type="" value="" id="subject" />
-        <br />
-        <label>Message:</label>
-        <textarea rows="5" id="message"></textarea>
-        <br />
-        <br />
-        <input type="submit" value="Send Message" id="submit-button" />
-    </form>
-    <script src="js/FanMail.js"></script>
+        <p>Jobs I Want: </p>
+        <ul id="jobs">
+            <li>Full-Stack Developer</li>
+            <li>Quality Assurance</li>
+            <li>Database Administrator</li>
+        </ul>
+        <form>
+            <h2>Grade Calculator</h2>
+            <p>Input the raw number of points per grade category.</p>
+            <div>
+                <label>Assignments (max 1000):</label>
+                <input type="number" value="" id="assignments" min="0" max="1000" step="1" required />
+            </div>
+            <br />
+            <div>
+                <label>Group Projects (max 200):</label>
+                <input type="number" value="" id="group-projects" min="0" max="1000" step="1" required />
+            </div>
+            <br />
+            <div>
+                <label>Quizzes (max 200):</label>
+                <input type="number" value="" id="quizzes" min="0" max="1000" step="1" required />
+            </div>
+            <br />
+            <div>
+                <label>Exams (max 400):</label>
+                <input type="number" value="" id="exams" min="0" max="1000" step="1" required />
+            </div>
+            <br />
+            <div>
+                <label>INTEX (max 200):</label>
+                <input type="number" value="" id="intex" min="0" max="1000" step="1" required />
+            </div>
+            <br />
+            <br />
+            <input type="submit" value="Calculate Grade" id="submit-button" />
+        </form>
+    </div>
+    <script src="js/gradecalculator.js"></script>
 </body>
 </html>
