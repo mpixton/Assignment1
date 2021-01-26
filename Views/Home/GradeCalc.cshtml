@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Grade Calculator";
+    ViewBag.Page = "Grade Calculator";
+}
+
+@model GradeCalcModel
+
+<div class="main-body">
+    <form method="post">
+        <h2>Grade Calculator</h2>
+        <p>Input the raw number of points per grade category.</p>
+        <div>
+            <label>Assignments:</label>
+            <input type="number" value="" asp-for="assignments"  id="assignments" />
+            @Html.ValidationMessageFor(m => m.assignments)
+        </div>
+        <br />
+        <div>
+            <label>Group Projects:</label>
+            <input type="number" value="" asp-for="group" id="group-projects" />
+            @Html.ValidationMessageFor(m => m.group)
+        </div>
+        <br />
+        <div>
+            <label>Quizzes:</label>
+            <input type="number" value="" asp-for="quizzes" id="quizzes" />
+            @Html.ValidationMessageFor(m => m.quizzes)
+        </div>
+        <br />
+        <div>
+            <label>Exams:</label>
+            <input type="number" value="" asp-for="exams" id="exams" />
+            @Html.ValidationMessageFor(m => m.exams)
+        </div>
+        <br />
+        <div>
+            <label>INTEX:</label>
+            <input type="number" value="" asp-for="intex" id="intex" />
+            @Html.ValidationMessageFor(m => m.intex)
+        </div>
+        <br />
+        <br />
+        <input type="submit" value="Calculate Grade" id="submit-button" />
+    </form>
+</div>
