@@ -15,31 +15,31 @@
         <div>
             <label>Assignments:</label>
             <input type="number" value="" asp-for="assignments"  id="assignments" />
-            @Html.ValidationMessageFor(m => m.assignments)
+            <div class="error">@Html.ValidationMessageFor(m => m.assignments)</div>
         </div>
         <br />
         <div>
             <label>Group Projects:</label>
             <input type="number" value="" asp-for="group" id="group-projects" />
-            @Html.ValidationMessageFor(m => m.group)
+            <div class="error">@Html.ValidationMessageFor(m => m.group)</div>
         </div>
         <br />
         <div>
             <label>Quizzes:</label>
             <input type="number" value="" asp-for="quizzes" id="quizzes" />
-            @Html.ValidationMessageFor(m => m.quizzes)
+            <div class="error">@Html.ValidationMessageFor(m => m.quizzes)</div>
         </div>
         <br />
         <div>
             <label>Exams:</label>
             <input type="number" value="" asp-for="exams" id="exams" />
-            @Html.ValidationMessageFor(m => m.exams)
+            <div class="error">@Html.ValidationMessageFor(m => m.exams)</div>
         </div>
         <br />
         <div>
             <label>INTEX:</label>
             <input type="number" value="" asp-for="intex" id="intex" />
-            @Html.ValidationMessageFor(m => m.intex)
+            <div class="error">@Html.ValidationMessageFor(m => m.intex)</div>
         </div>
         <br />
         <br />
